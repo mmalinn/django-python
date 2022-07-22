@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block cars %}
+{% if cars_user %}
+<h1>{{ cars_user.name }}</h1>
+<p>Producent: {{ cars_user.manufacturer }}</p>
+<p>{{ cars_user.description }}</p>
+<p>{{ cars_user.price }}</p>
+<p>{{ cars_user.year_of_production }}</p>
+{% else %}
+<p>No car with that id</p>
+{% endif %}
+{% endblock cars %}

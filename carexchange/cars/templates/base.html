@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>CarExchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h1>HAPPY CAREXCHANGE             SEARCH:                LOGOUT</h1>
+</nav>
+<div id="menu_side">
+    <h3>Nice to see You :)</h3>
+    {% for man in manufacturer %}
+    <p><a href = "/manufacturer/{{ man.id }}"> {{ man }} </a></p>
+    {% endfor %}
+</div>
+<div id="content">
+    {% block cars %}    {% endblock cars %}
+</div>
+<div style="clear: both;"> </div>
+</body>
+</html>

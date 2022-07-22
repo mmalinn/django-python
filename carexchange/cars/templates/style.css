@@ -1,0 +1,12 @@
+nav{
+margin: 0;
+padding: 0;
+}
+#menu_side{
+width: 200px;
+float: left;
+}
+#content{
+width: 700px;
+float: left;
+}

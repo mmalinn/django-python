@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block cars %}
+
+{% if manufacturer_cars %}
+
+{% for car in manufacturer_cars %}
+
+<p><a href=""> {{ cars.name }} </a></p>
+
+{% endfor %}
+
+{% else %}
+
+{% endif %}
+
+{% endblock %}
